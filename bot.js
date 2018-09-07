@@ -27,7 +27,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Bot 1 | Arab Community』 『اسم البوت』", true)
+      .addField("『Bot 1 | Arab Community』 ", true)
       
       .addField("『مصمم البوت Dexter#0445』", true)
       
@@ -254,8 +254,7 @@ client.on("message", message => {
       .setDescription(`
 -🚀 سرعه اتصال ممتازه
 -😎 سهل الاستخدام 
--⚠ صيانه كل يوم
--💵 مجاني بل كامل 
+-⚠ صيانه كل يوم 
 -📚 البوت عربي و سيتم اضافه اللغه النكليزية
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
