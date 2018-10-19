@@ -105,7 +105,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("$bc الرسالة", true)
+      .addField("**الأوامر**", "$bc الرسالة,)
   message.channel.sendMessage({embed});
 
  }
