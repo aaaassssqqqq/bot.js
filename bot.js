@@ -87,9 +87,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("$bc الرسالة", true)
-	  .setColor("RANDOM")
-      .addField("By:Dexter", true)
+      .addField("$bc الرسالة", By:Dexter)
   message.channel.sendMessage({embed});
 
  }
