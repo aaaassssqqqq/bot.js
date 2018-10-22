@@ -79,19 +79,7 @@ client.on('message', message => {
     });  
   
 
-client.on("message", message => {
-             
-     if(!message.channel.guild) return;
 
- if (message.content === "$help") {
-   message.react("😜")
-  const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-      .addField("$bc الرسالة", By:Dexter)
-  message.channel.sendMessage({embed});
-
- }
-});
 
 client.on('message', message => {
     if (message.content.startsWith("رابط")) {
