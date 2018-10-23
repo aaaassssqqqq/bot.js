@@ -5,7 +5,6 @@ client.on('message', message => {
 
               if(!message.channel.guild) return;
 
-    var prefix = "$";
 client.on('message', message => {
    
     let args = message.content.split(' ').slice(1).join(' ');
@@ -25,13 +24,7 @@ message.guild.members.forEach(m => {
    m.send(`${args}`);
  
 });
-  }
  
-});
-      
-  
-
-
 
 client.on('message', message => {
     if (message.content.startsWith("رابط")) {
