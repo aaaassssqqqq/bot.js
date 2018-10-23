@@ -98,7 +98,7 @@ message.author.send(`**مدة الرابط : يـوم
 
 
     }
-
+    var prefix = "$";
   client.on('message', async function (message)  {
 if(message.content.startsWith(prefix+"server")) {
 const vlevel = ['None', 'Low (Must have verified email)', 'Medium (Must be register for 5 mineuts)', 'High (Need to wait 10 minutes)', 'Very High (Need verified phone on account)']
