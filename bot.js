@@ -12,6 +12,9 @@ client.on("message", message => {
 })
  message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
  message.delete(); 
+                        message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'Offline').size}\` : `); 
+ message.delete(); 
+};     
 };     
 });
 
@@ -44,21 +47,5 @@ message.author.send(`**مدة الرابط : يـوم
 
     }
 });
-client.on('guildMemberAdd', Sal => { // By:Dexter
-    var embed = new Discord.RichEmbed()
-    .setAuthor(Sal.user.username, Sal.user.avatarURL)
-    .setThumbnail(Sal.user.avatarURL)
-    .setImage('http://live-timely-4jepdssgmc.time.ly/wp-content/uploads/2018/08/welcomeEvents.jpg') //هنا حط الصوره الي تبيها
-    .setTitle('عضو جديد!')
-    .setDescription('مرحبا بك بالسيرفر')
-    .addField('``ايدي العضو``:',"" +  Sal.user.id, true)
-    .addField('``تاق العضو``', Sal.user.discriminator, true)
-    .addField('``تم الانشاء في``', Sal.user.createdAt, true)
-    .addField(' 👤  انت رقم',`**[ ${Sal.guild.memberCount} ]**`,true)
-    .setColor('RANDOM')
-    .setFooter(Sal.guild.name, Sal.guild.iconURL, true)
-    var channel =Sal.guild.channels.find('name', 'welcome') //ww
-    if (!channel) return;
-    channel.send({embed : embed});
-    });
+
 client.login(process.env.BOT_TOKEN);
